@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="../static/css/css.css" />
+      <title>Title</title>
+   </head>
+   <body>
+      <h1 style="text-align: center">Url-Shortner</h1>
+      <div class="form">
+         <hr />
+         <form action="" method="post">
+            <div class="items">
+               <label for="">Url: </label>
+               <input type="url" name="url" />
+            </div>
+            <br />
+            <div class="items">
+               <label for=""> Alias: </label>
+               <input type="text" name="alias" />
+            </div>
+            <br />
+            <button type="submit">Submit</button>
+         </form>
+         <hr />
+      </div>
+      <div class="url">
+         <h3>Saved Urls</h3>
+         <ul>
+            {% for content in context %}
+            <li>
+               <a href="{{ content.url }}">{{ content.alias }} --></a>
+               <i>
+                  <a href="{{ url_for('deleteUrl', alias= content.alias) }}"
+                     >del</a
+                  >
+                  <a href="{{ url_for('copyUrl', alias= content.alias) }}"
+                     >copy</a
+                  >
+               </i>
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
+   </body>
+</html>
