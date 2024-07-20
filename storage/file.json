@@ -18,5 +18,21 @@
    {
       "url": "https://gotytv.com/",
       "alias": "gotytv"
+   },
+   {
+      "url": "https://discord.gg/pallets",
+      "alias": "flask discord"
+   },
+   {
+      "url": "https://flask.palletsprojects.com/en/latest/deploying/",
+      "alias": "deployment and production with flask"
+   },
+   {
+      "url": "https://en.wikipedia.org/wiki/cross-site_scripting",
+      "alias": "cross-site scripting"
+   },
+   {
+      "url": "https://flask.palletsprojects.com/en/latest/async-await/",
+      "alias": "async and await in flask"
    }
 ]

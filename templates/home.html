@@ -29,7 +29,7 @@
          <ul>
             {% for content in context %}
             <li>
-               <a href="{{ content.url }}">{{ content.alias }} --></a>
+               <a href="{{ content.url }}" target="_blank">{{ content.alias }} --></a>
                <i>
                   <a href="{{ url_for('deleteUrl', alias= content.alias) }}"
                      >del</a
